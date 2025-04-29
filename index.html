@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.zyn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/w95fa" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon (1).ico">
+</head>
+<body>
+    <nav class="win95-menu-bar">
+        <ul>
+            <li>
+                <a href="#"><u>L</u>inks</a>
+                <ul class="dropdown-menu">
+                    <li><a target="_blank" href="https://discordapp.com/users/1119790408449396776"><u>D</u>iscord</a></li>
+                    <li><a target="_blank" href="https://github.com/zyn29"><u>G</u>ithub</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/ne.lethu_/"><u>I</u>nstagram</a></li>
+                    <li><a href="#">E<u>x</u>it</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><u>H</u>elp</a>
+              <ul class="dropdown-menu">
+                    <li><a href="#"><u>A</u>bout...</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="desktop">
+        <div class="desktop-icon" data-opens-window="#about-me-window" tabindex="0" aria-label="Open About Me">
+            <img src="/assets/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png" alt="About Me Icon" width="32" height="32">
+            <span>About Me</span>
+        </div>
+        <div class="desktop-icon" data-opens-window="#art-window" tabindex="0" aria-label="Open Art">
+            <img src="/assets/Gemini_Generated_Image_gdfsyxgdfsyxgdfs.png" alt="Art Icon" width="32" height="32">
+            <span>Gallery</span>
+        </div>
+    </main>
+
+    <div class="win95-window" id="about-me-window">
+        <div class="title-bar">
+            <div class="title-bar-text">About Me</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <img src="/assets/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png" alt="Mhlelisi Dlamini" style="float: left; margin-right: 10px; width: 64px; height: 64px;">
+            <h2>Mhlelisi Dlamini</h2>
+            <ul>
+                <li>16 years</li>
+                <li>Programming since the age of 14</li>
+                <li>Spends a lot of time on spotify</li>
+                <li>Loves to experiment on new computer concepts</li>
+            </ul>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <div class="win95-window" id="art-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Gallery</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-content fullscreen-gallery">
+          <img id="gallery-image" src="/assets/ChatGPT Image Apr 29, 2025, 02_15_10 PM.png" alt="Gallery Image">
+          <img id="gallery-image" src="/assets/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png" alt="Gallery Image">
+          <img id="gallery-image" src="/assets/ChatGPT Image Apr 29, 2025, 02_16_54 PM.png" alt="Gallery Image">
+          <div class="gallery-controls">
+            <button class="win95-button" onclick="prevImage()">◀ Previous</button>
+            <button class="win95-button" onclick="nextImage()">Next ▶</button>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        
+      
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
