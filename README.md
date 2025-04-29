@@ -46,10 +46,10 @@ If you're a developer interested in exploring the retro codebase:
 
 **Future Enhancements (Planned):**
 
-*⚙️ More refined visual elements to more closely match the Windows 95 aesthetic.
-*⚙️ Enhanced JavaScript for smoother window dragging and other interactive elements.
-*⚙️ A functional "Start" menu with links to different sections.
-*⚙️ Icons and other visual assets reminiscent of the operating system.
+* ⚙️More refined visual elements to more closely match the Windows 95 aesthetic.
+* ⚙️Enhanced JavaScript for smoother window dragging and other interactive elements.
+* ⚙️A functional "Start" menu with links to different sections.
+* ⚙️Icons and other visual assets reminiscent of the operating system.
 * ⚙️Responsive design considerations, while maintaining the retro look on different screen sizes (a fun challenge!).
 
 ## Learnings and Reflections
