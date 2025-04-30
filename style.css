@@ -1,8 +1,9 @@
 body {
+  background-size: cover;
   font-family: 'W95FA';
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(/assets/microsoft_windows_95-wallpaper-1920x1080.jpg);
+  background-image: url(/assets/microsoft_windows_95-wallpaper-2560x1440.jpg);
   margin: 0;
   padding: 0;
   min-height: 100vh;
