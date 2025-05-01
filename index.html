@@ -6,9 +6,20 @@
     <title>.zyn</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/w95fa" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon (1).ico">
+    <link rel="icon" type="favicon" href="assets/favicon/favicon (1).ico">
 </head>
 <body>
+    <div id="startup-screen">
+        <img src="/assets/icons/Windows_Logo_(1992-2001).svg.png" alt="Windows 95 Startup" id="startup-logo">
+        <p>Microsoft Windows 95</p>
+        <div class="loading-bar-container">
+             <div class="loading-bar"></div>
+        </div>
+        <audio id="startup-sound" src="/assets/Audio/Microsoft Windows 95 Startup Sound 0.mp3" preload="auto"></audio>
+        <button id="start-btn" class="win95-button">Click to Start</button>
+
+    </div>
+
     <nav class="win95-menu-bar">
         <ul>
             <li>
@@ -22,7 +33,7 @@
                 </ul>
             </li>
             <li><a href="#"><u>H</u>elp</a>
-              <ul class="dropdown-menu">
+                <ul class="dropdown-menu">
                     <li><a href="#"><u>A</u>bout...</a></li>
                 </ul>
             </li>
@@ -34,15 +45,18 @@
             <img src="/assets/icons/tumblr_ee3f176bf9451240e03817069a8ac89c_980369f5_1280.png" alt="About Me Icon" width="32" height="32">
             <span>About Me</span>
         </div>
-        <div class="desktop-icon" data-opens-window="#art-window" tabindex="0" aria-label="Open Art">
-            <img src="/assets/icons/Gemini_Generated_Image_gdfsyxgdfsyxgdfs.png" alt="Art Icon" width="32" height="32">
+        <div class="desktop-icon" data-opens-window="#art-window" tabindex="0" aria-label="Open Gallery">
+            <img src="/assets/icons/Gemini_Generated_Image_gdfsyxgdfsyxgdfs.png" alt="Gallery Icon" width="32" height="32">
             <span>Gallery</span>
         </div>
-
-        <div class="desktop-icon" data-opens-window="#media-player" tabindex="0" aria-label="Open Art">
-            <img src="/assets/icons/download.gif" alt="Art Icon" width="32" height="32">
-            <span>Gallery</span>
+         <div class="desktop-icon" data-opens-window="#media-player-window" tabindex="0" aria-label="Open Media Player">
+            <img src="/assets/icons/download.gif" alt="Media Player Icon" width="32" height="32">
+            <span>Media Player</span>
         </div>
+         <div class="desktop-icon" data-opens-window="#project-window" tabindex="0" aria-label="Open Projects">
+             <img src="/assets/icons/project_icon_placeholder.png" alt="Projects Icon" width="32" height="32">
+             <span>Projects</span>
+         </div>
     </main>
 
     <div class="win95-window" id="about-me-window">
@@ -55,7 +69,7 @@
             </div>
         </div>
         <div class="window-content">
-            <img src="/assets/icons/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png" alt="Mhlelisi Dlamini" style="float: left; margin-right: 10px; width: 64px; height: 64px;">
+            <img src="/assets/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png" alt="Mhlelisi Dlamini" style="float: left; margin-right: 10px; width: 64px; height: 64px;">
             <h2>Mhlelisi Dlamini</h2>
             <ul>
                 <li>16 years</li>
@@ -78,35 +92,79 @@
         </div>
         <div class="window-content fullscreen-gallery">
           <img id="gallery-image" src="/assets/ChatGPT Image Apr 29, 2025, 02_15_10 PM.png" alt="Gallery Image">
-          <img id="gallery-image" src="/assets/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png" alt="Gallery Image">
-          <img id="gallery-image" src="/assets/ChatGPT Image Apr 29, 2025, 02_16_54 PM.png" alt="Gallery Image">
           <div class="gallery-controls">
-            <button class="win95-button" onclick="prevImage()">◀ Previous</button>
-            <button class="win95-button" onclick="nextImage()">Next ▶</button>
+             <button class="win95-button" id="prev-image-button">◀ Previous</button>
+             <button class="win95-button" id="next-image-button">Next ▶</button>
           </div>
         </div>
-        
-          </div>
-        </div>
-
-        <div class="win95-window" id="media-player">
-            <div class="title-bar">
-                <div class="title-bar-text">Media Player</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize"></button>
-                    <button aria-label="Close"></button> 
-                </div>
-
-                <div class="win95-window" id="project">
-                    <div class="title-bar">
-                        <div class="title-bar-text">Showcase</div>
-                        <div class="title-bar-controls">
-                            <button aria-label="Minimize"></button>
-                            <button aria-label="Maximize"></button>
-                            <button aria-label="Close"></button> 
-                        </div>        
     </div>
+
+     <div class="win95-window" id="media-player-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Media Player</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <p>Media Player Content Goes Here...</p>
+            <p>(Functionality not implemented)</p>
+        </div>
+    </div>
+
+     <div class="win95-window" id="project-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Projects Showcase</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <p>Project details would go here.</p>
+             <ul>
+                 <li>Project 1...</li>
+                 <li>Project 2...</li>
+             </ul>
+             <p>(Example Content)</p>
+        </div>
+    </div>
+
+    <div class="win95-taskbar">
+        <button id="start-button" class="win95-button">
+            <b>Start</b>
+        </button>
+        <div class="win95-taskbar">
+            <button id="start-button" class="win95-button">
+                <b>Start</b>
+            </button>
+    
+            <div id="taskbar-apps">
+                </div>
+            <div id="start-menu" class="win95-start-menu">
+               </div>
+        </div>
+
+        <div id="start-menu" class="win95-start-menu">
+            <ul>
+                <li data-opens-window="#about-me-window"><img src="/assets/icons/tumblr_ee3f176bf9451240e03817069a8ac89c_980369f5_1280.png" alt="" width="20" height="20"><span><u>A</u>bout Me</span></li>
+                <li data-opens-window="#art-window"><img src="/assets/icons/Gemini_Generated_Image_gdfsyxgdfsyxgdfs.png" alt="" width="20" height="20"><span><u>G</u>allery</span></li>
+                 <li data-opens-window="#media-player-window"><img src="/assets/icons/download.gif" alt="" width="20" height="20"><span>Media Player</span></li>
+                 <li data-opens-window="#project-window"><img src="/assets/icons/project_icon_placeholder.png" alt="" width="20" height="20"><span>Projects</span></li>
+                <li class="separator"></li>
+                <li><span><img src="/assets/icons/settings_icon_placeholder.png" alt="" width="20" height="20"> S<u>e</u>ttings</span></li>
+                <li><span><img src="/assets/icons/find_icon_placeholder.png" alt="" width="20" height="20"> <u>F</u>ind</span></li>
+                <li><span><img src="/assets/icons/help_icon_placeholder.png" alt="" width="20" height="20"> <u>H</u>elp</span></li>
+                <li><span><img src="/assets/icons/run_icon_placeholder.png" alt="" width="20" height="20"> R<u>u</u>n...</span></li>
+                <li class="separator"></li>
+                <li id="shutdown-button"><span><img src="/assets/icons/shutdown_icon_placeholder.png" alt="" width="20" height="20"> Sh<u>u</u>t Down...</span></li>
+            </ul>
+        </div>
+    </div>
+
     <script src="script.js" defer></script>
 </body>
 </html>
