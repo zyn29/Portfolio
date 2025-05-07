@@ -257,61 +257,6 @@ body {
   border-bottom: 1px solid #ffffff;
 }
 
-.gallery-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.gallery-nav {
-  background-color: #c0c0c0;
-  border: 1px solid #808080;
-  border-top: 1px solid #ffffff;
-  border-left: 1px solid #ffffff;
-  border-right: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  font-size: 14px;
-  padding: 4px 8px;
-  cursor: pointer;
-  height: 40px;
-}
-
-.gallery-nav:active {
-  border-top: 1px solid #000000;
-  border-left: 1px solid #000000;
-  border-right: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
-}
-
-.fullscreen-gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-  height: 100%;
-  overflow: hidden;
-  padding: 0;
-  position: relative; 
-  box-sizing: border-box; 
-}
-
-.fullscreen-gallery img {
-  max-width: 100%;
-  max-height: calc(100% - 50px);
-  object-fit: contain;
-  display: block; 
-  margin-bottom: 40px; 
-}
-
-.gallery-controls {
-  position: absolute;
-  bottom: 10px; 
-  left: 50%;
-  transform: translateX(-50%); 
-  display: flex;
-  gap: 10px;
-}
 
 .win95-taskbar {
     position: fixed;

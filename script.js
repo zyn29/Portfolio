@@ -254,38 +254,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    const images = [
-        "/assets/ChatGPT Image Apr 29, 2025, 02_15_10 PM.png",
-        "/assets/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png",
-        "/assets/ChatGPT Image Apr 29, 2025, 02_16_54 PM.png",
-    ];
-    let currentIndex = 0;
-    const galleryImageElement = document.getElementById("gallery-image");
-    const nextButton = document.getElementById("next-image-button");
-    const prevButton = document.getElementById("prev-image-button");
-
-    function showImage(index) {
-        if (galleryImageElement && images.length > 0) {
-             currentIndex = (index + images.length) % images.length; 
-             galleryImageElement.src = images[currentIndex];
-        }
-    }
-
-    if (nextButton && prevButton && galleryImageElement) {
-        nextButton.addEventListener('click', () => {
-            showImage(currentIndex + 1);
-        });
-
-        prevButton.addEventListener('click', () => {
-            showImage(currentIndex - 1);
-        });
-
-        
-        showImage(0);
-    } else {
-         console.warn("Gallery elements (image or buttons) not found.");
-    }
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
