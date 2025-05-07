@@ -10,8 +10,14 @@ body {
   overflow: hidden;
 }
 
-.window-content ul {
-  padding-top: 25px;
+.window-content ul #bold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#about-me-window .window-content ul {
+  padding-left: 20px;
+  padding-top: 30px;
 }
 
 .win95-menu-bar {
@@ -256,7 +262,6 @@ body {
   border-right: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
 }
-
 
 .win95-taskbar {
     position: fixed;
