@@ -9,6 +9,8 @@
     <link rel="icon" type="favicon" href="assets/favicon/favicon (1).ico">
 </head>
 <body>
+    <audio id="mouseclick" src="/assets/Audio/Mouse Click - Sound Effect (HD) 0.mp3"></audio>
+
     <div id="startup-screen">
         <img src="/assets/icons/Windows_Logo_(1992-2001).svg.png" alt="Windows 95 Startup" id="startup-logo">
         <p>Microsoft Windows 95</p>
@@ -19,6 +21,7 @@
         <button id="start-btn" class="win95-button">Click to Start</button>
 
     </div>
+
 
     <nav class="win95-menu-bar">
         <ul>
@@ -34,7 +37,7 @@
             </li>
             <li><a href="#"><u>H</u>elp</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#"><u>A</u>bout...</a></li>
+                    <li><a target="_blank" href="https://github.com/zyn29/Portfolio"><u>A</u>bout Site</a></li>
                 </ul>
             </li>
         </ul>
@@ -47,14 +50,10 @@
         </div>
 
         <div class="desktop-icon" data-opens-window="#Skills-window" tabindex="0" aria-label="Open About Me">
-            <img src="#" alt="About Me Icon" width="32" height="32">
+            <img src="/assets/icons/ChatGPT Image May 8, 2025, 05_15_03 PM.png" alt="About Me Icon" width="32" height="32">
             <span>Skills</span>
         </div>
         
-         <div class="desktop-icon" data-opens-window="#media-player-window" tabindex="0" aria-label="Open Media Player">
-            <img src="/assets/icons/download.gif" alt="Media Player Icon" width="32" height="32">
-            <span>Media Player</span>
-        </div>
          <div class="desktop-icon" data-opens-window="#project-window" tabindex="0" aria-label="Open Projects">
              <img src="/assets/icons/project_icon_placeholder.png" alt="Projects Icon" width="32" height="32">
              <span>Projects</span>
@@ -71,13 +70,13 @@
             </div>
         </div>
         <div class="window-content">
-            <img src="/assets//icons/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png" alt="Mhlelisi Dlamini" style="float: left; margin-right: 10px; width: 64px; height: 64px;">
+            <img src="/assets//icons/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png" alt="About-me" style="float: left; margin-right: 10px; width: 64px; height: 64px;">
             <h2>Mhlelisi Dlamini</h2>
             <ul>
                 <li><span id="bold">Passionate Programmer </span>At 16, I'm deeply fascinated by programming and its power to bring ideas to life.</li>
                 <li><span id="bold">Exploring Code </span>Currently taking courses on <span id="bold">Full Stack Development</span>😊</li>
                 <li><span id="bold">Tech Enthusiast </span>Keenly interest in new emerging <span id="bold">Libaries, Franeworks, and Creator Tools.</span></li>
-                <li><span id="bold">Continuos Learner</span>Always seeking new knowledge through online resources and the tech community.</li>
+                <li><span id="bold">Continuos Learner </span>Always seeking new knowledge through online resources and the tech community.</li>
             </ul>
             <div style="clear: both;"></div>
         </div>
@@ -93,6 +92,7 @@
             </div>
         </div>
         <div class="window-content">
+            <img src="/assets/icons/ChatGPT Image May 8, 2025, 05_26_03 PM.png" alt="Skills" style="float: left; margin-right: 10px; width: 64px; height: 64px;" >
             <h3>[The skills outlined herein reflect practical experience gained through personal projects and may differ from professional work experience]</h3>
             <ul>
                 <li>empty</li>
@@ -102,23 +102,6 @@
         </div>
     </div>
 
-     <div class="win95-window" id="media-player-window">
-        <div class="title-bar">
-            <div class="title-bar-text">Media Player</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="window-content">
-            <p>Media Player Content Goes Here...</p>
-            <p>(Functionality not implemented)</p>
-            <ul>
-                <li>test</li>
-            </ul>
-        </div>
-    </div>
 
      <div class="win95-window" id="project-window">
         <div class="title-bar">
