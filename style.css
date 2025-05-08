@@ -13,6 +13,7 @@ body {
 .window-content ul #bold {
   font-weight: bold;
   text-decoration: underline;
+  color: #008080;
 }
 
 #about-me-window .window-content ul {
