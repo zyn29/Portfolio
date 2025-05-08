@@ -572,31 +572,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Start button or start menu element not found!");
     }
 
-
-    // Image Gallery
-    const images = [
-        "/assets/ChatGPT Image Apr 29, 2025, 02_15_10 PM.png",
-        "/assets/ChatGPT Image Apr 29, 2025, 01_49_49 AM.png",
-        "/assets/ChatGPT Image Apr 29, 2025, 02_16_54 PM.png",
-    ];
-    let currentIndex = 0;
-    const galleryImageElement = document.getElementById("gallery-image");
-    const nextButton = document.getElementById("next-image-button");
-    const prevButton = document.getElementById("prev-image-button");
-
-    function showImage(index) {
-        if (galleryImageElement && images.length > 0) {
-             currentIndex = (index + images.length) % images.length;
-             galleryImageElement.src = images[currentIndex];
-        }
-    }
-
-    if (nextButton && prevButton && galleryImageElement) {
-        nextButton.addEventListener('click', () => showImage(currentIndex + 1));
-        prevButton.addEventListener('click', () => showImage(currentIndex - 1));
-        showImage(0);
-    } else if (document.getElementById('art-window')) { 
-         console.warn("Gallery elements (image or buttons) not found inside #art-window.");
-    }
-
+    const audio = document.getElementById("mouseclick");
+    document.addEventListener('mousedown', function(event) {
+      if (event.button === 0) {
+        audio.currentTime = 0;
+        audio.play();
+      }
+    });
+    
 });
