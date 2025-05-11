@@ -10,6 +10,7 @@ body {
   overflow: hidden;
 }
 
+
 .skill-item {
   display: flex;
   align-items: center;
@@ -18,7 +19,7 @@ body {
 
 .skill-name {
   width: 45px; 
-  margin-right: 15px;
+  margin-right: 45px;
 }
 
 .skill-level-bar {
@@ -158,8 +159,8 @@ body {
 }
 
 .desktop-icon img {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   margin-bottom: 5px;
 }
 
@@ -194,7 +195,7 @@ body {
   border-right: 2px solid #000000;
   border-bottom: 2px solid #000000;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  font-size: 12px;
+  font-size: 15px;
   position: absolute;
   display: none;
   z-index: 999;
@@ -290,90 +291,6 @@ body {
   border-bottom: 1px solid #ffffff;
 }
 
-.win95-taskbar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background-color: #c0c0c0;
-    border-top: 2px solid #ffffff;
-    box-shadow: inset 0 1px 0 #808080;
-    padding: 2px;
-    z-index: 1001;
-    display: flex;
-    align-items: center;
-    font-family: 'W95FA';
-    font-size: 12px;
-}
-
-#start-button {
-    height: 24px;
-    padding: 2px 8px;
-    margin-right: 5px;
-    font-weight: bold;
-}
-
-.win95-start-menu {
-    display: none;
-    position: absolute;
-    bottom: 28px;
-    left: 2px;
-    background-color: #c0c0c0;
-    border: 1px solid #808080;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-    list-style: none;
-    margin: 0;
-    padding: 2px;
-    min-width: 180px;
-    z-index: 1002;
-    white-space: nowrap;
-    user-select: none;
-}
-
-.win95-start-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.win95-start-menu li {
-    padding: 4px 10px 4px 5px;
-    cursor: default;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.win95-start-menu li img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-
-
-.win95-start-menu li span u {
-    text-decoration: underline;
-}
-
-.win95-start-menu li:hover {
-    background-color: #000080;
-    color: #ffffff;
-}
-
-.win95-start-menu li.separator {
-    height: 1px;
-    background-color: #808080;
-    margin: 4px 2px;
-    padding: 0;
-    overflow: hidden;
-    border-top: 1px solid #ffffff;
-}
-
 #startup-screen {
     position: fixed;
     top: 0;
@@ -444,42 +361,6 @@ body {
   overflow: hidden; 
   padding: 0 2px; 
 }
-
-.taskbar-app-button {
-  background-color: #c0c0c0;
-  border: 1px solid;
-  border-color: #ffffff #000000 #000000 #ffffff; 
-  padding: 2px 8px;
-  margin: 2px 2px; 
-  height: calc(100% - 6px); 
-  font-family: 'W95FA', sans-serif;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  max-width: 160px; 
-  overflow: hidden;
-  text-overflow: ellipsis; 
-  white-space: nowrap;
-  cursor: default;
-  user-select: none;
-  box-sizing: border-box;
-}
-
-.taskbar-app-button img {
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-}
-
-.taskbar-app-button.active {
-  border-color: #808080 #ffffff #ffffff #808080; 
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQImWP4////fwYGBgYAGfgB9B9qnQwAAAAASUVORK5CYII="); /* Subtle dotted background when active */
-  background-repeat: repeat;
-  font-weight: bold; 
-   padding-left: 7px;
-   padding-right: 7px;
-}
-
 
 .desktop {
 height: calc(100vh - 30px - 25px); 
