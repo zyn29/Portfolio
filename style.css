@@ -10,6 +10,9 @@ body {
   overflow: hidden;
 }
 
+.img-border {
+  border: 5px #000080;
+}
 
 .skill-item {
   display: flex;
